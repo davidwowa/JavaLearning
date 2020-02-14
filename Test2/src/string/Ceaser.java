@@ -3,12 +3,12 @@ package string;
 public class Ceaser {
 
 	public static void main(String[] args) {
-		String test = "baba";
+		String test = "babatututut";
 		System.out.println("text : " + test);
 		char[] clearText = test.toCharArray();
 		
 		// TODO homework
-		int key = 24;
+		int key = 17;
 
 		char[] encrypted = new char[clearText.length];
 
@@ -25,10 +25,7 @@ public class Ceaser {
 	static char decryptChar(int key, char ch) {
 		int index = getIndexTo(ch);
 		// TODO homework
-		//if(){}
-		//
-		//
-		int value = Math.abs((key - index)) % 25;
+		int value = (Math.abs(25 - (key - index)) % 25);
 
 		return getCharTo(value);
 	}
