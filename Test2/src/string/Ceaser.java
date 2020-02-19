@@ -8,7 +8,7 @@ public class Ceaser {
 		char[] clearText = test.toCharArray();
 		
 		// TODO homework
-		int key = 17;
+		int key = -10;
 
 		char[] encrypted = new char[clearText.length];
 
@@ -26,6 +26,7 @@ public class Ceaser {
 		int index = getIndexTo(ch);
 		// TODO homework
 		int value = (Math.abs(25 - (key - index)) % 25);
+//		int value = (Math.abs((25 - (key - index) % 25)));
 
 		return getCharTo(value);
 	}
